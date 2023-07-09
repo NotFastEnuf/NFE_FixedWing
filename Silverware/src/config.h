@@ -212,7 +212,7 @@
 
 // *************invert servo and pid throws together
 //#define INVERT_AILERON_SERVO
-//#define INVERT_ELEVATOR_SERVO
+#define INVERT_ELEVATOR_SERVO
 //#define INVERT_RUDDER_SERVO
 
 // *************SERVO SUBTRIMS
