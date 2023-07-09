@@ -13,8 +13,8 @@
 //#define BWHOOP
 //#define E011
 //#define H8mini_blue_board
-//#define Silverlite_Brushless
-#define Alienwhoop_ZERO  
+#define Silverlite_Brushless
+//#define Alienwhoop_ZERO  
 
 // *************It is possible to get a servo signal out of the M- motor pad on a brushed flight controller by inverting
 // *************the signal and adding a 10k pullup resistor from M- to 5v+.  Uncomment below if this hardware hack has been performed.
@@ -48,14 +48,14 @@
 
 // *************Radio protocol selection
 // *************select only one
-#define RX_SBUS
+//#define RX_SBUS
 //#define RX_CRSF                                           //Requires tbs firmware v2.88 or newer for failsafe to operate properly
 //#define RX_DSMX_2048
 //#define RX_DSM2_1024
 //#define RX_IBUS
 //#define RX_NRF24_BAYANG_TELEMETRY
 //#define RX_BAYANG_BLE_APP
-//#define RX_BAYANG_PROTOCOL_TELEMETRY_AUTOBIND
+#define RX_BAYANG_PROTOCOL_TELEMETRY_AUTOBIND
 
 
 
@@ -218,9 +218,9 @@
 // *************SERVO SUBTRIMS
 // *************If craft can not be trimmed within the limits of the linear portion of the expo curve, then an offset of subtrim must be applied.  Careful
 //**************this will cause servos to extend beyond the 1000 to 2000us range and will rely on servo's ability to respond to the extended range
-#define ROLL_SUBTRIM 0.00
-#define PITCH_SUBTRIM	0.00
-#define YAW_SUBTRIM 0.00
+#define ROLL_SUBTRIM 0.03
+#define PITCH_SUBTRIM	0.10
+#define YAW_SUBTRIM 0.07
 
 // *************SERVO OUTPUT SCALE
 #define ROLL_SCALE_POS 1.00
