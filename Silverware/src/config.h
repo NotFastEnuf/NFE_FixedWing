@@ -18,7 +18,7 @@
 
 // *************It is possible to get a servo signal out of the M- motor pad on a brushed flight controller by inverting
 // *************the signal and adding a 10k pullup resistor from M- to 5v+.  Uncomment below if this hardware hack has been performed.
-//#define PWM_MOSFET_INVERSION
+#define PWM_MOSFET_INVERSION
 
 
 //**********************************************************************************************************************
@@ -26,16 +26,16 @@
 
 // *************EXPO from 0.00 to 1.00 , 0 = no exp
 // *************positive = less sensitive near center 
-#define ACRO_EXPO_ROLL 0.65
-#define ACRO_EXPO_PITCH 0.65
-#define ACRO_EXPO_YAW 0.65
+#define ACRO_EXPO_ROLL 0.35
+#define ACRO_EXPO_PITCH 0.35
+#define ACRO_EXPO_YAW 0.35
 
 #define ANGLE_EXPO_ROLL 0.55	//not used yet
 #define ANGLE_EXPO_PITCH 0.0	//not used yet
 #define ANGLE_EXPO_YAW 0.55		//not used yet
 
 // *************max angle for level mode
-#define LEVEL_MAX_ANGLE 70.0f
+#define LEVEL_MAX_ANGLE 50.0f
 
 // ************* low rates multiplier if rates are assigned to a channel
 #define LOW_RATES_MULTI 0.5f
@@ -48,9 +48,9 @@
 
 // *************Radio protocol selection
 // *************select only one
-#define RX_SBUS
+//#define RX_SBUS
 //#define RX_CRSF                                           //Requires tbs firmware v2.88 or newer for failsafe to operate properly
-//#define RX_DSMX_2048
+#define RX_DSMX_2048
 //#define RX_DSM2_1024
 //#define RX_IBUS
 //#define RX_NRF24_BAYANG_TELEMETRY
@@ -211,15 +211,15 @@
 //#define TORQUE_BOOST 1.0		//untested on servos
 
 // *************invert servo and pid throws together
-//#define INVERT_AILERON_SERVO
-//#define INVERT_ELEVATOR_SERVO
-//#define INVERT_RUDDER_SERVO
+#define INVERT_AILERON_SERVO
+#define INVERT_ELEVATOR_SERVO
+#define INVERT_RUDDER_SERVO
 
 // *************SERVO SUBTRIMS
 // *************If craft can not be trimmed within the limits of the linear portion of the expo curve, then an offset of subtrim must be applied.  Careful
 //**************this will cause servos to extend beyond the 1000 to 2000us range and will rely on servo's ability to respond to the extended range
 #define ROLL_SUBTRIM 0.00
-#define PITCH_SUBTRIM	0.00
+#define PITCH_SUBTRIM	-0.20
 #define YAW_SUBTRIM 0.00
 
 // *************SERVO OUTPUT SCALE

@@ -64,15 +64,15 @@ float stickTransitionProfileB[3]  = { 0.5 , 0.5 , 0.5};           //keep values 
 //Servo Pids for Fixed Wing
 //Stuntmaster
 //                         ROLL       PITCH     YAW
-float pidkp[PIDNUMBER] = { 1.74e-2 , 2.5e-2  , 2.5e-2 }; 
-float pidki[PIDNUMBER] = { 1.1e-1  , 1.1e-1 , 1.1e-1 };	
-float pidkd[PIDNUMBER] = { 2.04e-1 , 3.0e-1  , 3.0e-1 };
+//float pidkp[PIDNUMBER] = { 1.74e-2 , 2.5e-2  , 2.5e-2 }; 
+//float pidki[PIDNUMBER] = { 1.1e-1  , 1.1e-1 , 1.1e-1 };	
+//float pidkd[PIDNUMBER] = { 2.04e-1 , 3.0e-1  , 3.0e-1 };
 
 //Corsair
 //                         ROLL       PITCH     YAW
-//float pidkp[PIDNUMBER] = { 3.5e-2 , 2.5e-2  , 5.5e-2 }; 
-//float pidki[PIDNUMBER] = { 3.0e-1  , 3.1e-1 , 3.0e-1 };	
-//float pidkd[PIDNUMBER] = { 4.00e-1 , 3.0e-1  , 6.0e-1 };
+float pidkp[PIDNUMBER] = { 3.5e-2 , 2.5e-2  , 5.5e-2 }; 
+float pidki[PIDNUMBER] = { 3.0e-1  , 3.1e-1 , 3.0e-1 };	
+float pidkd[PIDNUMBER] = { 4.00e-1 , 3.0e-1  , 6.0e-1 };
 
 
 //Servo Pids for Fixed Wing
