@@ -18,7 +18,7 @@
 
 // *************It is possible to get a servo signal out of the M- motor pad on a brushed flight controller by inverting
 // *************the signal and adding a 10k pullup resistor from M- to 5v+.  Uncomment below if this hardware hack has been performed.
-//#define PWM_MOSFET_INVERSION
+#define PWM_MOSFET_INVERSION
 
 
 //**********************************************************************************************************************
@@ -218,9 +218,9 @@
 // *************SERVO SUBTRIMS
 // *************If craft can not be trimmed within the limits of the linear portion of the expo curve, then an offset of subtrim must be applied.  Careful
 //**************this will cause servos to extend beyond the 1000 to 2000us range and will rely on servo's ability to respond to the extended range
-#define ROLL_SUBTRIM 0.00
+#define ROLL_SUBTRIM 0.05
 #define PITCH_SUBTRIM	0.00
-#define YAW_SUBTRIM 0.00
+#define YAW_SUBTRIM -0.04
 
 // *************SERVO OUTPUT SCALE
 #define ROLL_SCALE_POS 1.00
@@ -228,7 +228,7 @@
 #define PITCH_SCALE_POS 1.00
 #define PITCH_SCALE_NEG 1.00
 #define YAW_SCALE_POS 1.00
-#define YAW_SCALE_NEG 1.00
+#define YAW_SCALE_NEG 0.93
 
 
 //**********************************************************************************************************************
