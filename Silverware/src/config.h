@@ -74,7 +74,7 @@
 //*************channel is on, or racemodeHORIZON if both channels are on - and will be standard LEVELMODE if neither 
 //*************racemode or horizon are switched on.
 #define ARMING     CHAN_5
-#define MANUALMODE CHAN_OFF
+#define MANUALMODE CHAN_7
 #define LEVELMODE  CHAN_6
 #define RACEMODE   CHAN_OFF
 #define HORIZON    CHAN_OFF

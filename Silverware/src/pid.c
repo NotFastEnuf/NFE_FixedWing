@@ -64,9 +64,9 @@ float stickTransitionProfileB[3]  = { 0.5 , 0.5 , 0.5};           //keep values 
 //Servo Pids for Fixed Wing
 //Stuntmaster
 //                         ROLL       PITCH     YAW
-float pidkp[PIDNUMBER] = { 1.74e-2 , 2.5e-2  , 2.5e-2 }; 
+float pidkp[PIDNUMBER] = { 2.5e-2 , 2.5e-2  , 2.5e-2 }; 
 float pidki[PIDNUMBER] = { 1.1e-1  , 1.1e-1 , 1.1e-1 };	
-float pidkd[PIDNUMBER] = { 2.04e-1 , 3.0e-1  , 3.0e-1 };
+float pidkd[PIDNUMBER] = { 3.04e-1 , 3.0e-1  , 3.0e-1 };
 
 //Corsair
 //                         ROLL       PITCH     YAW
@@ -102,7 +102,7 @@ float pidkd_init[PIDNUMBER] = { 0, 0, 0 };
 	const float outlimit[PIDNUMBER] = { 1.0 , 1.0 , 1.0 };
 
 	// limit of integral term (abs)
-	const float integrallimit[PIDNUMBER] = { 0.1 , 0.05 , 0.1 };		//Airplanes are already stable so treat I like trim and limit to 10% or maybe even less.  This might allow for higher gains
+	const float integrallimit[PIDNUMBER] = { 0.25 , 0.25 , 0.25 };		//Airplanes are already stable so treat I like trim and limit to 10% or maybe even less.  This might allow for higher gains
 
 
 // non changable things below
