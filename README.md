@@ -37,7 +37,7 @@ https://www.youtube.com/watch?v=x2uHhEAmMuM&t=98s
 
 
 
-## brianquad Notes - Additions for Analog Aux channels
+## Additions for Analog Aux channels  - brianquad Notes
 
 This option (controlled in config.h) adds support for Analog Aux channels to control certain pre-programmed features. These are intended to be used with a transmitter with knobs/sliders to easily alter parameters while flying. These are controlled by #define lines in config.h. Enable these features by uncommenting the "#define USE_ANALOG_AUX" line. Commenting that line disables all analog aux channels at the compiler level, meaning they do not make the built firmware bigger or slower than it was before.
 
